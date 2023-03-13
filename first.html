@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Details</title>
+<style>
+img{
+width: 100px;
+border-radius: 250px;
+}
+hr.solid{
+border-top:3px solid #bbb;
+border-color: coral;
+}
+p.small{
+line-height:1.8;
+}
+</style>
+</head>
+<body>
+  <h1>MANUPATI NIKHIL REDDY</h1>
+  <hr class="solid">
+  <img src="image/image.jpg">
+  <hr class="solid">
+  <form name="form1" action = "#">
+  <label for="fname">First name: </label>
+  <input type="text" name="fname" required><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="text" name="email"><br><br>
+  <label for="DOB">DOB:</label>
+  <input type="text" name="dob"><br><br>
+  <label for="Location">Location:</label>
+  <input type="text" name="Location"><br><br>
+  <label for="Phone">Phone:</label>
+  <input type="number" name="Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+  <button id="Button" onclick = "printinput()">submit</button>
+  <table>
+ <tbody id="myTBody">
+   <tr>
+     <td>Cell 1</td>
+   </tr>
+  </tbody>
+  <tbody id="myTBody1">
+   <tr>
+     <td>Cell 1</td>
+   </tr>
+  </tbody>
+</table>
+  <h2 id="output"></h2>
+</form>
+<script src="first.js"></script>
+</body>
+</html>
